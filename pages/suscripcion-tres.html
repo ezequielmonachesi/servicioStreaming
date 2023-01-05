@@ -31,7 +31,12 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./suscripcion.html">Suscripcion</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./suscripcion.html"
+                  >Suscripcion</a
+                >
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -56,20 +61,71 @@
             <div>
               <img src="../img/logo.jpg" alt="" class="w-100" />
             </div>
-            <p class="mb-0">Paso 3 de 5</p>
-            <h3 class="mb-4">Crea una contraseña</h3>
-            <div class="mb-3 px-2">
-            <input
-            type="password"
-            name="password"
-            id="contraseña"
-            class="form-control text-bg-dark border-0 rounded-1"
-          />
-          <p>Usa al menos seis caracteres (distingue mayúsculas y minúsculas), incluido un número o carácter especial.</p>
+            <p class="mb-0">Paso 3 de 4</p>
+            <h3 class="mb-4">Escoge el plan</h3>
+            <div class="form-check">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="radioPlan"
+                  id="radioPremium"
+                />
+                <label class="form-check-label" for="radioPremium">
+                  Plan Premium Moon+
+
+                  <h4 class="text-start text-md-center display-5">Premium</h4>
+                  <p class="text-start text-md-center">
+                    Mira Moon+ en tu TV, computadora, celular y tablet. <br />
+                    Cantidad dispositivos <b>4</b><br />
+                    Calidad de video <b>Óptima</b><br />
+                    Resolución <b>Ultra HD 4k</b><br />
+                    Precio mensual<br /><b>$1050</b>
+                  </p>
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="radioPlan"
+                  id="radioDuo"
+                />
+                <label class="form-check-label" for="radioDuo">
+                  Plan Duo Moon+
+                  <h4 class="text-start text-md-center display-5">Duo</h4>
+                  <p class="text-start text-md-center"> Mira Moon+ en tu TV, computadora, celular y tablet. <br>
+                    Cantidad dispositivos <b>2</b><br>
+                    Calidad de video <b>Mejor</b><br>
+                    Resolución <b>Full HD 1080p</b><br>
+                    Precio mensual<br><b>$995</b>
+                  </p>
+                </label>
+              </div>
+              <div class="form-check mb-5">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="radioPlan"
+                  id="radioClassic"
+                />
+                <label class="form-check-label" for="radioClassic">
+                  Plan Classic Moon+
+                  <h4 class="text-start text-md-center display-5">Classic</h4>
+                  <p class="text-start text-md-center"> Mira Moon+ en tu TV, computadora, celular y tablet. <br>
+                    Cantidad dispositivos <b>2</b><br>
+                    Calidad de video <b>Buena</b><br>
+                    Resolución <b>HD 720p</b><br>
+                    Precio mensual<br><b>$700</b>
+                  </p>
+                </label>
+              </div>
             </div>
-            <div>
-              <a href="../pages/suscripcion-dos.html" class="btn btn_continuar text-white fw-bold text-uppercase w-100">Continuar</a>
-            </div>
+            <a
+              href="../pages/suscripcion-cuatro.html"
+              class="btn btn_continuar text-white fw-bold text-uppercase w-100"
+              >Finalizar</a
+            >
           </form>
         </article>
       </div>
