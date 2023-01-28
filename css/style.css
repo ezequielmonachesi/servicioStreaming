@@ -1,72 +1,101 @@
-body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-main{
-    flex-grow: 0;
+main {
+  flex-grow: 0;
 }
-.fondo{
-    background: #000000;
+.fondo {
+  background: #000000;
 }
-.acuerdo{
-    height: 200px;
+.acuerdo {
+  height: 200px;
 }
 .btn_continuar {
-    background: linear-gradient(82deg,#e1054a 19%,#ce4100);
+  background: linear-gradient(82deg, #e1054a 19%, #ce4100);
+  opacity: 0.9;
 }
-.zoom-cards img{
-    filter: grayscale(40%);
+.btn_continuar:hover {
+  opacity: 1;
 }
-.zoom-cards img:hover{
-    filter: grayscale(0%);
-    transform: scale(1.04);
-    transition: all 0.4s;
+.zoom-cards img {
+  filter: grayscale(40%);
 }
-.page-link{
-    background-color: #ce4100;
-    border: #b14119;
-    color: white;
+.zoom-cards img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.04);
+  transition: all 0.4s;
 }
-.page-link.active{
-    background-color: black;
-    border: black;
+.page-link {
+  background-color: #ce4100;
+  border: #b14119;
+  color: white;
 }
-.page-link:hover{
-    background-color: #8f391a;
-    border: #8f391a;
-    color: white;
+.page-link.active {
+  background-color: black;
+  border: black;
 }
-.page-link.active:hover{
-    background-color: black;
-    border: black;
-    color: white;
+.page-link:hover {
+  background-color: #8f391a;
+  border: #8f391a;
+  color: white;
 }
-.planes:hover{
-    cursor:default;
-    transform: scale(1.05);
-    transition: all 0.3s;
+.page-link.active:hover {
+  background-color: black;
+  border: black;
+  color: white;
 }
-@media all and (max-width: 767px){
-    .banner{
-        height: 250px;
-        object-fit: cover;
-    }
-    .planes:hover{
-        cursor:default;
-        transform: none;
-        transition: all none;
-    }
+.planes:hover {
+  cursor: default;
+  transform: scale(1.05);
+  transition: all 0.3s;
 }
-@media all and (min-width: 768px) and (max-width: 991px){
-    .banner{
-        height: 400px;
-        object-fit: cover;
-    }
+.cursor-default {
+  cursor: default;
 }
-@media all and (min-width: 992px){
-    .banner{
-        height: 400px;
-        object-fit: cover;
-    }
+.cards-nosotros h2{
+    background: #0a0a0a;
+}
+.cards-nosotros{
+    box-shadow: 0 1px 2px rgba(121, 25, 25, 0.3);
+}
+
+@media all and (max-width: 767px) {
+  .banner {
+    height: 250px;
+    object-fit: cover;
+  }
+  .planes:hover {
+    cursor: default;
+    transform: none;
+    transition: all none;
+  }
+  .cards-nosotros{
+      box-shadow: none;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .banner {
+    height: 400px;
+    object-fit: cover;
+  }
+  .bg-darklight {
+    background: #0a0a0a;
+  }
+  .cards-nosotros h2{
+      background: none;
+  }
+}
+@media all and (min-width: 992px) {
+  .banner {
+    height: 400px;
+    object-fit: cover;
+  }
+  .bg-darklight {
+    background: #0a0a0a;
+  }
+  .cards-nosotros h2{
+      background: none;
+  }
 }

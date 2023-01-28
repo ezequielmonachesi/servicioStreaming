@@ -13,342 +13,19 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">Inicio</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./pages/suscripcion.html">Suscripcion</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
-          </div>
-        </div>
-      </nav>
+    <header class="fondo">
+      <a href="index.html">Inicio</a>
+      <a href="./pages/suscripcion.html">Suscripcion</a>
+      <a href="./pages/sobreNosotros.html">Sobre nosotros</a>
     </header>
     <main class="fondo">
-      <!-- Banner principal -->
-      <section id="bannerMoon" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#bannerMoon"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#bannerMoon"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#bannerMoon"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="./img/guerradepapa.jpg"
-              class="d-block w-100 banner"
-              alt="guerradepapa"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./img/guerradepapa.jpg"
-              class="d-block w-100 banner"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./img/guerradepapa.jpg"
-              class="d-block w-100 banner"
-              alt="..."
-            />
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#bannerMoon"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#bannerMoon"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </section>
-      <!-- Peliculas | Cards -->
-      <section>
-        <div class="container-fluid">
-          <article class="row zoom-cards">
-            <h2 class="text-white mb-3 mt-4">Peliculas sugeridas</h2>
-            <aside class="col-md-6 col-lg-2 mb-3">
-              <a href="">
-                <img
-                  src="./img/peliculas/asaltoalacasadelamoneda.jpg"
-                  alt="asaltoalacasadelamoneda"
-                  class="w-100 rounded-2"
-                />
-              </a>
-            </aside>
-            <aside class="col-md-6 col-lg-2 mb-3">
-              <a href="">
-                <img src="./img/peliculas/enBuscaDeLaFelicidad.jpg" alt="enBuscaDeLaFelicidad" class="w-100 rounded-2" />
-              </a>
-            </aside>
-            <aside class="col-md-6 col-lg-2 mb-3 d-none d-md-block">
-              <a href="">
-                <img
-                  src="./img/peliculas/juegodehonor.jpg"
-                  alt="juegodehonor"
-                  class="w-100 rounded-2"
-                />
-              </a>
-            </aside>
-            <aside class="col-md-6 col-lg-2 mb-3 d-none d-md-block">
-              <a href="">
-                <img
-                  src="./img/peliculas/manosMilagrosas.jpg"
-                  alt="manosMilagrosas"
-                  class="w-100 rounded-2"
-                />
-              </a>
-            </aside>
-            <aside class="col-md-6 col-lg-2 mb-3 d-none d-md-block">
-              <a href="">
-                <img
-                  src="./img/peliculas/inseparables.jpg"
-                  alt="inseparables"
-                  class="w-100 rounded-2"
-                />
-              </a>
-            </aside>
-            <aside class="col-md-6 col-lg-2 mb-3 d-none d-md-block">
-              <a href="">
-                <img
-                  src="./img/peliculas/nuncaestarde.jpg"
-                  alt="nuncaestarde"
-                  class="w-100 rounded-2"
-                />
-              </a>
-            </aside>
-          </article>
-          <!-- grilla de productos -->
-          <nav aria-label="Page navigation navegacion">
-            <ul
-              class="pagination justify-content-center justify-content-md-end py-2"
-            >
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li class="page-item">
-                <a class="page-link active" href="#">1</a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <!-- Series Cards -->
-        <div class="container-fluid">
-          <article class="row zoom-cards">
-            <h2 class="text-white mb-3 mt-1">Series sugeridas</h2>
-            <aside class="col-md-6 col-lg-2 mb-3">
-              <a href="">
-                <img
-                  src="./img/series/arrow.jpg"
-                  alt=""
-                  class="w-100 rounded-2"
-                />
-              </a>
-            </aside>
-            <aside class="col-md-6 col-lg-2 mb-3">
-              <a href="">
-                <img
-                  src="./img/series/vikingos.jpg"
-                  alt=""
-                  class="w-100 rounded-2"
-                />
-              </a>
-            </aside>
-            <aside class="col-md-6 col-lg-2 mb-3 d-none d-md-block">
-              <a href="">
-                <img src="./img/series/breakingbad.jpg" alt="breakingbad" class="w-100 rounded-2" />
-              </a>
-            </aside>
-            <aside class="col-md-6 col-lg-2 mb-3 d-none d-md-block">
-              <a href="">
-                <img
-                  src="./img/series/newamsterdan.jpg"
-                  alt="newamsterdan"
-                  class="w-100 h-100 rounded-2"
-                />
-              </a>
-            </aside>
-            <aside class="col-md-6 col-lg-2 mb-3 d-none d-md-block">
-              <a href="">
-                <img src="./img/series/theblacklist.jpg" alt="theblacklist" class="w-100 rounded-2" />
-              </a>
-            </aside>
-            <aside class="col-md-6 col-lg-2 mb-3 d-none d-md-block">
-              <a href="">
-                <img
-                  src="./img/series/hajimenoippo.jpg"
-                  alt="hajimenoippo"
-                  class="w-100 h-100 rounded-2"
-                />
-              </a>
-            </aside>
-          </article>
-          <!-- grilla de productos -->
-          <nav aria-label="Page navigation navegacion">
-            <ul
-              class="pagination justify-content-center justify-content-md-end py-2"
-            >
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li class="page-item">
-                <a class="page-link active" href="#">1</a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>  
-        <!-- Comedias -->
-        <div class="container-fluid">
-          <article class="row zoom-cards">
-            <h2 class="text-white mb-3 mt-1">Comedias sugeridas</h2>
-            <aside class="col-md-6 col-lg-2 mb-3">
-              <a href="">
-                <img
-                  src="./img/comedia/guerradepapas2.jpg"
-                  alt=""
-                  class="w-100 rounded-2"
-                />
-              </a>
-            </aside>
-            <aside class="col-md-6 col-lg-2 mb-3">
-              <a href="">
-                <img
-                  src="./img/comedia/paul.jpg"
-                  alt=""
-                  class="w-100 rounded-2"
-                />
-              </a>
-            </aside>
-            <aside class="col-md-6 col-lg-2 mb-3 d-none d-md-block">
-              <a href="">
-                <img src="./img/comedia/policiasderepuesto.jpg" alt="" class="w-100 rounded-2" />
-              </a>
-            </aside>
-            <aside class="col-md-6 col-lg-2 mb-3 d-none d-md-block">
-              <a href="">
-                <img
-                  src="./img/comedia/ted2.jpg"
-                  alt=""
-                  class="w-100 h-100 rounded-2"
-                />
-              </a>
-            </aside>
-            <aside class="col-md-6 col-lg-2 mb-3 d-none d-md-block">
-              <a href="">
-                <img src="./img/comedia/unespiaymedio.jpg" alt="" class="w-100 rounded-2" />
-              </a>
-            </aside>
-            <aside class="col-md-6 col-lg-2 mb-3 d-none d-md-block">
-              <a href="">
-                <img
-                  src="./img/comedia/unnovatoenapuros2.jpg"
-                  alt=""
-                  class="w-100 h-100 rounded-2"
-                />
-              </a>
-            </aside>
-          </article>
-          <!-- grilla de productos -->
-          <nav aria-label="Page navigation navegacion">
-            <ul
-              class="pagination justify-content-center justify-content-md-end py-2"
-            >
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li class="page-item">
-                <a class="page-link active" href="#">1</a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </section>
       <!-- Suscripcion -->
       <section>
         <div class="container">
           <h2 class="text-white display-3 text-center mt-5">Escoge tu plan</h2>
-          <p class="text-white text-center mb-5">Con tu suscripcion primer mes gratis.</p>
+          <p class="text-white text-center mb-5">
+            Con tu suscripcion primer mes gratis.
+          </p>
           <article class="row">
             <aside
               class="col-md-4 mb-5 rounded-3 ps-5 pt-5 position-relative planes order-md-1"
@@ -365,13 +42,18 @@
                   class="border-bottom border-start border-danger border-opacity-50 p-3 text-end mb-2"
                 >
                   <h4 class="text-center display-5">Premium</h4>
-                  <p class="text-center"> Mira Moon+ en tu TV, computadora, celular y tablet. <br>
-                    Cantidad dispositivos <b>4</b><br>
-                    Calidad de video <b>Óptima</b><br>
-                    Resolución <b>Ultra HD 4k</b><br>
-                    Precio mensual<br><b>$1050</b>
+                  <p class="text-center">
+                    Mira Moon+ en tu TV, computadora, celular y tablet. <br />
+                    Cantidad dispositivos <b>4</b><br />
+                    Calidad de video <b>Óptima</b><br />
+                    Resolución <b>Ultra HD 4k</b><br />
+                    Precio mensual<br /><b>$1050</b>
                   </p>
-                  <a href="./pages/suscripcion.html" class="btn btn_continuar text-white fw-bold text-uppercase ">Suscríbete</a>
+                  <a
+                    href="./pages/suscripcion.html"
+                    class="btn btn_continuar text-white fw-bold text-uppercase"
+                    >Suscríbete</a
+                  >
                 </div>
               </div>
             </aside>
@@ -390,13 +72,18 @@
                   class="border-bottom border-start border-danger border-opacity-50 p-3 text-end mb-2"
                 >
                   <h4 class="text-center display-5">Duo</h4>
-                  <p class="text-center"> Mira Moon+ en tu TV, computadora, celular y tablet. <br>
-                    Cantidad dispositivos <b>2</b><br>
-                    Calidad de video <b>Mejor</b><br>
-                    Resolución <b>Full HD 1080p</b><br>
-                    Precio mensual<br><b>$900</b>
+                  <p class="text-center">
+                    Mira Moon+ en tu TV, computadora, celular y tablet. <br />
+                    Cantidad dispositivos <b>2</b><br />
+                    Calidad de video <b>Mejor</b><br />
+                    Resolución <b>Full HD 1080p</b><br />
+                    Precio mensual<br /><b>$900</b>
                   </p>
-                  <a href="./pages/suscripcion.html" class="btn btn_continuar text-white fw-bold text-uppercase ">Suscríbete</a>
+                  <a
+                    href="./pages/suscripcion.html"
+                    class="btn btn_continuar text-white fw-bold text-uppercase"
+                    >Suscríbete</a
+                  >
                 </div>
               </div>
             </aside>
@@ -415,13 +102,18 @@
                   class="border-bottom border-start border-danger border-opacity-50 p-3 text-end mb-2"
                 >
                   <h4 class="text-center display-5">Classic</h4>
-                  <p class="text-center"> Mira Moon+ en tu TV, computadora, celular y tablet. <br>
-                    Cantidad dispositivos <b>2</b><br>
-                    Calidad de video <b>Buena</b><br>
-                    Resolución <b>HD 720p</b><br>
-                    Precio mensual<br><b>$700</b>
+                  <p class="text-center">
+                    Mira Moon+ en tu TV, computadora, celular y tablet. <br />
+                    Cantidad dispositivos <b>2</b><br />
+                    Calidad de video <b>Buena</b><br />
+                    Resolución <b>HD 720p</b><br />
+                    Precio mensual<br /><b>$700</b>
                   </p>
-                  <a href="./pages/suscripcion.html" class="btn btn_continuar text-white fw-bold text-uppercase ">Suscríbete</a>
+                  <a
+                    href="./pages/suscripcion.html"
+                    class="btn btn_continuar text-white fw-bold text-uppercase"
+                    >Suscríbete</a
+                  >
                 </div>
               </div>
             </aside>
